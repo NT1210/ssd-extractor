@@ -1,5 +1,5 @@
 const utils  = require('./utilCrab.js')
-console.log("test")
+
 function writeToDousei (sheet_katsu, target_date_column, matched_lists, workbook2, dateToBeInserted, desktopDir, sheet_boil, sheet_nama) {
 
     funcKatsu(sheet_katsu, target_date_column, matched_lists, workbook2, dateToBeInserted, desktopDir)
