@@ -213,6 +213,9 @@ function funcBoil(sheet_boil, target_date_column, matched_lists, workbook2, date
                 if(size_detected === "клешненосн") size_detected = "爪下"
                 if(size_detected === "ходильн") size_detected = "肩肉＋小指"
 
+                if(size_detected === "Н") size_detected = "H"
+                if(size_detected === "М") size_detected = "M"
+
                 if( sheet_boil.row(check.row).cell(producer_column).value() === boil.producer && sheet_boil.row(check.row).cell(size_column).value() === size_detected){
 
                     sheet_boil.row(check.row).cell(target_date_column).value(boil.qtty)
@@ -295,6 +298,9 @@ function funcBoil(sheet_boil, target_date_column, matched_lists, workbook2, date
 
                 if(size_detected === "клешненосн") size_detected = "爪下"
                 if(size_detected === "ходильн") size_detected = "肩肉＋小指"
+
+                if(size_detected === "Н") size_detected = "H"
+                if(size_detected === "М") size_detected = "M"
                 
                 let written_vessel_positions = []
 
@@ -442,6 +448,9 @@ function funcNama(sheet_nama, target_date_column, matched_lists, workbook2, date
        
                 size_detected = size_detected.slice(-1)[0]
 
+                if(size_detected === "Н") size_detected = "H"
+                if(size_detected === "М") size_detected = "M"
+
                 if(size_detected === "ходильн") size_detected = "脚"
 
                 if( sheet_nama.row(check.row).cell(producer_column).value() === nama.producer && sheet_nama.row(check.row).cell(size_column).value() === size_detected){
@@ -524,6 +533,9 @@ function funcNama(sheet_nama, target_date_column, matched_lists, workbook2, date
                 size_detected = size_detected.slice(-1)[0]
 
                 if(size_detected === "ходильн") size_detected = "脚"
+
+                if(size_detected === "Н") size_detected = "H"
+                if(size_detected === "М") size_detected = "M"
                 
                 let written_vessel_positions = []
 
