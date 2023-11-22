@@ -221,7 +221,7 @@ function funcBoil(sheet_boil, target_date_column, matched_lists, workbook2, date
                 size_detected = size_detected.slice(-1)[0]
 
                 if(size_detected === "цел") size_detected = "ラウンド"
-                if(size_detected === "печевнь") size_detected = "カニミソ"
+                if(size_detected === "печень") size_detected = "カニミソ"
                 if(size_detected === "абд") size_detected = "腹肉"
 
                 if(size_detected === "Н") size_detected = "H"
@@ -309,8 +309,8 @@ function funcBoil(sheet_boil, target_date_column, matched_lists, workbook2, date
                 size_detected = size_detected.slice(-1)[0]
 
                 if(size_detected === "цел") size_detected = "ラウンド"
-                if(size_detected === "печевнь") size_detected = "カニミソ"
-                if(size_detected === "абж") size_detected = "腹肉"
+                if(size_detected === "печень") size_detected = "カニミソ"
+                if(size_detected === "абд") size_detected = "腹肉"
 
                 if(size_detected === "Н") size_detected = "H"
                 if(size_detected === "М") size_detected = "M"
@@ -465,7 +465,7 @@ function funcNama(sheet_nama, target_date_column, matched_lists, workbook2, date
                 if(size_detected === "М") size_detected = "M"
 
                 // if(size_detected === "цел") size_detected = "ラウンド"
-                // if(size_detected === "печевнь") size_detected = "カニミソ"
+                // if(size_detected === "печень") size_detected = "カニミソ"
                 // if(size_detected === "абд") size_detected = "腹肉"
 
                 if( sheet_nama.row(check.row).cell(producer_column).value() === nama.producer && sheet_nama.row(check.row).cell(size_column).value() === size_detected){
@@ -554,7 +554,7 @@ function funcNama(sheet_nama, target_date_column, matched_lists, workbook2, date
                 if(size_detected === "М") size_detected = "M"
 
                 // if(size_detected === "цел") size_detected = "ラウンド"
-                // if(size_detected === "печевнь") size_detected = "カニミソ"
+                // if(size_detected === "печень") size_detected = "カニミソ"
                 // if(size_detected === "абд") size_detected = "腹肉"
                 
                 let written_vessel_positions = []
