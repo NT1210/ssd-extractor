@@ -30,7 +30,7 @@
   "scripts": {
     "react-start": "cross-env BROWSER=none react-scripts start",
     "react-build": "react-scripts build",
-    "electron-start": "wait-on http://192.168.0.16:3000 && electron .",
+    "electron-start": "wait-on http://192.168.0.17:3000 && electron .",
     "electron-build": "electron-builder --win --x64",
     "start": "run-p react-start electron-start",
     "build": "run-s react-build electron-build",
