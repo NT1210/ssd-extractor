@@ -22,7 +22,7 @@ function funcKatsu (sheet_katsu, target_date_column, matched_lists, workbook2, d
     let size_column = 7
     
     let sortedTypeListObj = matched_lists[0] //katsu, nama, boil lists in obj
-    let revUnknownFVList = matched_lists[1]
+    // let revUnknownFVList = matched_lists[1]
     
     sortedTypeListObj.katsu.forEach(katsu => {
         let check = {doubled: false, row: 0} //check whether or not current f/v is already in excel
@@ -170,7 +170,7 @@ function funcBoil(sheet_boil, target_date_column, matched_lists, workbook2, date
     let size_column = 7
 
     let sortedTypeListObj = matched_lists[0] //katsu, nama, boil lists in obj
-    let revUnknownFVList = matched_lists[1]
+    // let revUnknownFVList = matched_lists[1]
 
     const order = ["6L", "5L", "4L", "3L", "2L", "L", "M", "H", "М", "Н", "клешненосн", "ходильн"]
 
@@ -406,7 +406,7 @@ function funcNama(sheet_nama, target_date_column, matched_lists, workbook2, date
     let size_column = 7
 
     let sortedTypeListObj = matched_lists[0] //katsu, nama, boil lists in obj
-    let revUnknownFVList = matched_lists[1]
+    // let revUnknownFVList = matched_lists[1]
 
     const order = ["6L", "5L", "4L", "3L", "2L", "L", "M", "H", "М", "Н", "клешненосн", "ходильн"]
 
