@@ -7,4 +7,4 @@ All the codes for extraction logic are stored in `/public` folder and React rela
 ![image](https://github.com/NT1210/ssd-extractor/assets/147454467/de228a5b-aaaf-4abb-93ac-cab86c2b6e65)
 
 ## Notes
-This app is a personal use. You need designated excel files for the program to be properly executed.
+This app is for a personal use. You need designated excel files for the program to be properly executed.
