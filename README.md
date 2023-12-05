@@ -5,3 +5,6 @@ Electron.js + React.js Desktop application made for the improvement of work effi
 All the codes for extraction logic are stored in /public folder and React related codes are stored in /src folder.
 
 ![image](https://github.com/NT1210/ssd-extractor/assets/147454467/de228a5b-aaaf-4abb-93ac-cab86c2b6e65)
+
+## Notes
+This is a personal use. You need designated excel files for the program to be executed.
