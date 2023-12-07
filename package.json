@@ -3,6 +3,7 @@
   "author": "Nishimura Naoyuki",
   "version": "1.0.0",
   "main": "public/electron.js",
+  "description": "Electron.js + React.js Desktop Application made for the improvement of work efficiency, targeting Russian seafood production",
   "homepage": "./",
   "private": true,
   "dependencies": {
@@ -64,9 +65,12 @@
   },
   "build": {
     "appId": "ssd-extractor.app",
+    "extends": null,
     "files": [
       "package.json",
-      "index.js"
+      "index.js",
+      "electron/**/*",
+      "build/**/*"
     ],
     "copyright": "Nishimura Naoyuki",
     "nsis": {
