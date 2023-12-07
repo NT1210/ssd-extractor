@@ -72,6 +72,9 @@
       "electron/**/*",
       "build/**/*"
     ],
+    "extraMetadata": {
+      "main": "electron/main.js"
+    },
     "copyright": "Nishimura Naoyuki",
     "nsis": {
       "oneClick": false,
