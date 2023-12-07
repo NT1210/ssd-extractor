@@ -1,5 +1,5 @@
 # ssd-extractor
-Electron.js + React.js Desktop application made for the improvement of work efficiency, targeting Russian seafood Production. 
+Electron.js + React.js Desktop application made for the improvement of work efficiency, targeting Russian seafood production. 
 
 ## Folder structures
 All the codes for extraction logic are stored in `/public` folder and React related codes are stored in `/src` folder.
