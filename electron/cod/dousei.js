@@ -23,11 +23,12 @@ function writeToDousei (sheet2, target_column, matched_list, workbook2, dateToBe
                         let temp =sheet2.row(i).cell(target_column).value() 
                         new_qtty = temp + qtty
                         new_qtty.toFixed(3)
+                    
                         sheet2.row(i).cell(target_column).value(new_qtty)
                     }catch(e){
                         
                     }finally{
-                        if (new_qtty > 0){
+                        if (new_qtty > 0){npm
                             //do nothing
                         }else{
                             sheet2.row(i).cell(target_column).value(qtty)
@@ -56,13 +57,13 @@ function writeToDousei (sheet2, target_column, matched_list, workbook2, dateToBe
                             sheet2.cell(fgcell).value(newValue)
                         }
                     }catch(e){
-                        console.log(e)
+                    
                     }
 
                     
                 }
             }catch(e){
-                
+              
             }
         })
     }

@@ -46,7 +46,7 @@ function main(ssdFile, douseiFile, desktopDir) {
                 
             })
             
-            return "ファイル「updated-2023ロシア極東マダラ生産状況.xlsx」をデスクトップに保存しました。"
+            return "ファイル「updated-2024ロシア極東マダラ生産状況.xlsx」をデスクトップに保存しました。"
         }catch(e){
             return e
         }
