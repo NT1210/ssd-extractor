@@ -8,7 +8,7 @@ function writeToDousei (sheet2, target_column, matched_list, workbook2, dateToBe
     // セルが特定できたら転記する。
     // 漁場も同時に記入する。
 
-    for (let i=6; i<120; i++){
+    for (let i=6; i<200; i++){
         let fvcell = "D"+i
     
         matched_list.forEach(matc =>{
