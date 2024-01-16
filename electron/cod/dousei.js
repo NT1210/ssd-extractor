@@ -67,7 +67,7 @@ function writeToDousei (sheet2, target_column, matched_list, workbook2, dateToBe
         })
     }
 
-    let outputName = "updated-2023ロシア極東マダラ生産状況.xlsx"
+    let outputName = "updated-2024ロシア極東マダラ生産状況.xlsx"
     let exportFileName = desktopDir + "/" + outputName
     workbook2.toFileAsync(exportFileName)
 
