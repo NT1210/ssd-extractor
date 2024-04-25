@@ -55,8 +55,8 @@ function detect_fv(crab_list, XLSX, dbFile){
             obj["ru"] = vessel_in_rus //vessel
             obj["eng"] = vessel_in_eng //vessel
             obj["producer"] = producer //producer eng
-            obj["producer_ru"] = producer_ru //producer ru 1
-            obj["producer_ru2"] = producer_ru2 //producer ru 2
+            obj["producer_ru"] = producer_ru.replace(/’/g, "'").replace(/”/g, "\"").replace(/“/g, "\"") //producer ru 1
+            obj["producer_ru2"] = producer_ru2.replace(/’/g, "'").replace(/”/g, "\"").replace(/“/g, "\"") //producer ru 2
             
             db_list.push(obj)
  
