@@ -16,11 +16,23 @@ const CrabDousei = ({setDouseiCheck, setPage, douseiCheck}) => {
     if(folder.length>0) setDouseiCheck(true)
   }
 
+  const handleDrop = (e) => {
+    e.preventDefault()
+    const target = e.dataTransfer.files[0]
+    file.setDouseiFile(target.path)
+    setDouseiCheck(true)
+  }
+
+  const handleDrag = (e) => {
+    e.preventDefault()
+  }
+
 
   return (
     <>
         <VStack h="calc(90vh)" display='flex' justifyContent='center'
                alignItems="center" bg='white' style={{opacity: "0.5", fontWeight: "bold"}}
+               onDragOver={handleDrag} onDrop={handleDrop}
         >
 
           <Button onClick={openFolder}>

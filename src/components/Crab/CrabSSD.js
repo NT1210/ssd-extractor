@@ -14,10 +14,22 @@ const CrabSSD = ({setSsdCheck, setPage, ssdCheck}) => {
     if(folder.length>0) setSsdCheck(true)
   }
 
+  const handleDrop = (e) => {
+    e.preventDefault()
+    const target = e.dataTransfer.files[0]
+    file.setSsdFile(target.path)
+    setSsdCheck(true)
+  }
+
+  const handleDrag = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <>
         <VStack h="calc(90vh)" display='flex' justifyContent='center'
                alignItems="center" bg='white' style={{opacity: "0.5", fontWeight: "bold"}}
+               onDragOver={handleDrag} onDrop={handleDrop}
         >
           <Button onClick={openFolder}>
             <FontAwesomeIcon icon={faFileArrowUp} size="2xl" />  

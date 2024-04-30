@@ -14,10 +14,22 @@ const CrabOPDB = ({setDBCheck, setPage, dbCheck}) => {
         if(folder.length>0) setDBCheck(true)
     }
 
+    const handleDrop = (e) => {
+        e.preventDefault()
+        const target = e.dataTransfer.files[0]
+        file.setDBFile(target.path)
+        setDBCheck(true)
+      }
+    
+      const handleDrag = (e) => {
+        e.preventDefault()
+      }
+
     return (
         <>
         <VStack h="calc(90vh)" display='flex' justifyContent='center'
                alignItems="center" bg='white' style={{opacity: "0.5", fontWeight: "bold"}}
+               onDragOver={handleDrag} onDrop={handleDrop}
         >
 
           <Button onClick={openFolder}>
