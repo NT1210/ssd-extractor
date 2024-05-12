@@ -234,6 +234,20 @@ function populateDateConvert(date) {
     return converted
 }
 
+// find date for old ssd
+function old_display_date(sheet1) {
+
+    const sentenceDayIncluded = sheet1["A2"].v
+    const splittedSentence = sentenceDayIncluded.split(" ")
+    const datePart = splittedSentence[1]
+    const splittedDatePart = datePart.split(".")
+    const day = Number(splittedDatePart[0])
+    const month = Number(splittedDatePart[1])
+    const year = Number(splittedDatePart[2])
+
+    return `${month}月${day}日`
+}
+
 
 
 exports.sortout_crab = sortout_crab
@@ -244,3 +258,4 @@ exports.detect_month = detect_month
 exports.detect_year = detect_year
 exports.display_date = display_date
 exports.display_date_formatted = display_date_formatted
+exports.old_display_date = old_display_date
