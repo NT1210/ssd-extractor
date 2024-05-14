@@ -48,7 +48,7 @@ function main(ssdFile, douseiFile, desktopDir, dbFile) {
                     console.log("100% completed...")
                 })
                 
-                return `ファイル「updated-2023ロシア極東オピリオ冷凍品生産状況.xlsx」をデスクトップに保存しました。なお、${matched_lists[1]}が生産船DBに保存されていません。`
+                return `ファイル「updated-2024ロシア極東オピリオ冷凍品生産状況.xlsx」をデスクトップに保存しました。なお、${matched_lists[1]}が生産船DBに保存されていません。`
                 
             }else{
                 const dateToBeInserted = utils.display_date(sheet1)
@@ -76,7 +76,7 @@ function main(ssdFile, douseiFile, desktopDir, dbFile) {
                     console.log("100% completed...")
                 })
                 
-                return `ファイル「updated-2023ロシア極東オピリオ冷凍品生産状況.xlsx」をデスクトップに保存しました。なお、${matched_lists[1]}が生産船DBに保存されていません。`
+                return `ファイル「updated-2024ロシア極東オピリオ冷凍品生産状況.xlsx」をデスクトップに保存しました。なお、${matched_lists[1]}が生産船DBに保存されていません。`
             }
 
         }catch(e){
