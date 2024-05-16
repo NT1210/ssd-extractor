@@ -195,7 +195,7 @@ function funcBoil(sheet_boil, target_date_column, matched_lists, workbook2, date
         } 
 
         try{
-            for(let i=7; i<201; i++){ 
+            for(let i=7; i<401; i++){ 
                 if(sheet_boil.row(i).cell(vessel_column).value() === boil.f_vessel){
                     check["doubled"] = true
                     check["row"] = i   
@@ -317,7 +317,7 @@ function funcBoil(sheet_boil, target_date_column, matched_lists, workbook2, date
                 
                 let written_vessel_positions = []
 
-                for(let i=7; i<201; i++){
+                for(let i=7; i<401; i++){
                     if(sheet_boil.row(i).cell(vessel_column).value() !== undefined ) {
                         written_vessel_positions.push(i)
                     }else{
@@ -435,7 +435,7 @@ function funcNama(sheet_nama, target_date_column, matched_lists, workbook2, date
         } 
 
         try{
-            for(let i=7; i<201; i++){ 
+            for(let i=7; i<401; i++){ 
                 if(sheet_nama.row(i).cell(vessel_column).value() === nama.f_vessel){
                     check["doubled"] = true
                     check["row"] = i   
@@ -559,7 +559,7 @@ function funcNama(sheet_nama, target_date_column, matched_lists, workbook2, date
                 
                 let written_vessel_positions = []
 
-                for(let i=7; i<201; i++){
+                for(let i=7; i<401; i++){
                     if(sheet_nama.row(i).cell(vessel_column).value() !== undefined ) {
                         written_vessel_positions.push(i)
                     }else{
