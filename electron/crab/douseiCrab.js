@@ -6,7 +6,7 @@ function writeToDousei (sheet_katsu, target_date_column, matched_lists, workbook
     funcBoil(sheet_boil, target_date_column, matched_lists, workbook2, dateToBeInserted, desktopDir)
     funcNama(sheet_nama, target_date_column, matched_lists, workbook2, dateToBeInserted, desktopDir)
 
-    let outputName = "updated-2023ロシア極東タラバ冷凍品生産状況.xlsx"
+    let outputName = "updated-2024ロシア極東タラバ冷凍品生産状況.xlsx"
     let exportFileName = desktopDir + "/" + outputName
 
     workbook2.toFileAsync(exportFileName)
