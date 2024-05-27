@@ -21,7 +21,7 @@ function extractCodFromOldSSD (sheet1, dateToBeInserted, EXTRACT_LIST) {
         if (obj.product){   //if product isn't in the obj dict, then skip the procedure below
             try {
                 let itogo_row = 0
-                for(let j=1; j<300; j++){
+                for(let j=1; j<500; j++){
                     let rev_count = i-j
                     let rev_f_ground_cell = 'A'+rev_count
                     if(sheet1[rev_f_ground_cell] === undefined){
@@ -35,7 +35,7 @@ function extractCodFromOldSSD (sheet1, dateToBeInserted, EXTRACT_LIST) {
                 }
 
                 // let start_cell = 'A'+itogo_row
-                for(let j=1; j<300; j++){
+                for(let j=1; j<500; j++){
                     let rev_count = itogo_row+j
                     let rev_f_ground_cell = 'A'+rev_count
 
